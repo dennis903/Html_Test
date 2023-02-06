@@ -6,19 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles.css" />
     <title>Document</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
   </head>
   <body>
     <dialog id="layer-popup">
-      <form method="dialog">
-        <div class="layer-popup__header">
-          <button id="close-button" value="cancel">X</button>
-        </div>
-        <div class="layer-popup__contents">Hello world</div>
-      </form>
+      <div class="layer-popup__header">
+        <button id="close-button">X</button>
+      </div>
+      <div class="layer-popup__contents">Hello world</div>
     </dialog>
-    <menu>
-      <button id="show-popup">popup</button>
-    </menu>
+    <button id="show-popup">popup</button>
     <script src="./index.js"></script>
   </body>
 </html>

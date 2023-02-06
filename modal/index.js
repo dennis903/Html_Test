@@ -1,14 +1,25 @@
 "use strict";
 
-const layerPopup = document.querySelector("#layer-popup");
-const showButton = document.querySelector("#show-popup");
-// const closeButton = document.querySelector("#close-button");
+$(function () {
+  $("#show-popup").on("click", function () {
+    $("#layer-popup").get(0).showModal();
+  });
 
-const onOpen = () => {
-  layerPopup.showModal();
-};
+  $("#close-button").on("click", function () {
+    $("#layer-popup").get(0).close();
+  });
 
-showButton.addEventListener("click", onOpen);
-// layerPopup.addEventListener("close", () => {
-//   console.log("close");
-// });
+  $("#layer-popup").on("click", function (event) {
+    const dialog = $("#layer-popup").get(0);
+    const rect = dialog.getBoundingClientRect();
+    const isInDialog =
+      rect.top <= event.clientY &&
+      event.clientY <= rect.top + rect.height &&
+      rect.left <= event.clientX &&
+      event.clientX <= rect.left + rect.width;
+
+    if (!isInDialog) {
+      dialog.close();
+    }
+  });
+});

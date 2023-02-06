@@ -1,1 +1,31 @@
 @charset "utf-8";
+
+details {
+  background-color: #fff;
+  width: 200px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  padding: 0.5em 0.5em 0;
+}
+
+summary {
+  background-color: #fff;
+  position: relative;
+  font-weight: bold;
+  margin: -0.5em -0.5em 0;
+  padding: 0.5em;
+  list-style: none;
+}
+
+details[open] {
+  padding: 0.5em;
+}
+
+details[open] summary {
+  border-bottom: 1px solid #aaa;
+}
+
+.material-symbols-outlined {
+  float: right;
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+}
