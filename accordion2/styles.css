@@ -17,7 +17,7 @@ summary {
   list-style: none;
 }
 
-details[open] {
+.content {
   padding: 0.5em;
 }
 
