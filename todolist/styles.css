@@ -45,10 +45,10 @@
   word-break: break-all;
 }
 
-.delete-button {
-  position: absolute;
-  top: 8px;
-  right: 8px;
+
+
+.delete-button,
+.edit-button {
   width: 30px;
   height: 30px;
   background-color: transparent;

@@ -6,7 +6,6 @@ function validateForm (str) {
   $('#list').children().find('p').text(function() {
     listTexts.push($(this).text());
   });
-  console.log('validate form');
   let warningText = '';
   if (!str.trim().length) {
     warningText = '내용을 입력해 주세요.';
@@ -51,12 +50,13 @@ $(function () {
     const selectText = $this.find('.select-input').val();
     const todoElement = $('<li class="list-item" />');
     const deleteButton = $('<button type="button" class="delete-button">X</button>');
+    const editButton = $('<button type="button" class="edit-button">edit</button>')
     const todoParagraph = $('<p />').text(inputText);
     const selectValue = $this.find('#select').val();
 
     if (selectValue === 'create') {
       if (validateForm(inputText)) {
-        $("#list").append(todoElement.append(todoParagraph, deleteButton));
+        $("#list").append(todoElement.append(todoParagraph, editButton, deleteButton));
       }  
     } else {
       if (validateNumber(selectText) && validateForm(inputText)) {
@@ -70,7 +70,21 @@ $(function () {
 
   $('#list').on('click', '.delete-button', function () {
     $(this).parent().remove();
-  });
+  }).on('click', '.edit-button', function () {
+    const $this = $(this).parent();
+    const editForm = $('<form class="edit-form"></form>');
+    const editInput = $('<input type="text" class="edit-input"/>');
+    const confirmButton = $('<button type="submit" class="confirm-button">확인</button>');
+    const cancelButton = $('<button type="button" class="cancel-button">취소</button>');
+
+    editForm.append(editInput, confirmButton, cancelButton);
+    $this.children().attr('hidden', true);
+    $this.append(editForm);
+    $
+  }).on('submit', '.edit-form', function (event) {
+    event.preventDefault();
+  })
+
   $('#select').on('change', function() {
     const $this = $(this);
 
