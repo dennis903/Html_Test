@@ -129,6 +129,10 @@ $(function () {
 	});
 
 	list.on('click', '.list-edit-button', function () {
+		console.log('here?');
+		const targetDetail = $(this).parents('details');
+		const targetSummary = $(this).parent();
+		const targetContent = targetSummary.find('.content');
 
 	})
 
