@@ -4,14 +4,45 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
 	<link rel="stylesheet" href="./styles.css">
 	<title>Document</title>
 	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 </head>
 <body>
 	<form id="todo-form">
-		<input class="todo-input" type="text">
-		<button id="submit-button" type="submit">add</button>
+		<fieldset class="todo-content">
+			<legend>제목</legend>
+			<input type="text" class="todo-input" id="input-title">
+		</fieldset>
+		<fieldset class="todo-content" hidden>
+			<legend>인덱스</legend >
+			<input type="text" class="todo-input" id="input-index">
+		</fieldset>
+		<fieldset class="todo-content">
+			<legend>내용</legend>
+			<textarea name="detail" id="input-detail"></textarea>
+		</fieldset>
+		<fieldset class="todo-content">
+			<legend>유형</legend>
+			<label for="create">생성</label>
+			<input type="radio" name="select" id="create" value="create" checked>
+			<label for="update">수정</label>
+			<input type="radio" name="select" id="update" value="update">
+		</fieldset>
+		<menu>
+			<button type="button" id="all-delete-button">전체 삭제</button>
+			<button type="submit" id="submit-button">추가</button>
+		</menu>
 	</form>
+	<div id="list"></div>
+	<dialog id="layer-popup">
+		<div class="layer-popup__header">
+			<strong>Alert</strong>
+			<button id="close-button">X</button>
+		</div>
+		<div class="layer-popup__contents"></div>
+	</dialog>
+	<script src="./index.js"></script>
 </body>
 </html>

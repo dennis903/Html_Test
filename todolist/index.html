@@ -12,12 +12,12 @@
     <form id="todo-form">
       <select name="select" id="select">
         <option value="create">생성</option>
-        <option value="update">수정</option> <!--숫자만 입력하게 만들기-->
+        <option value="update">수정</option>
       </select>
-      <input class="todo-input" type="text">
-      <button id="submit-button" type="submit">add</button>
+      <input type="text" id="select-input" hidden>
+      <input type="text" id="todo-input">
+      <button type="submit" id="submit-button">add</button>
     </form>
-    <div id="number-warning"></div>
     <div id="warning"></div>
     <ul id="list"></ul>
     <script src="./index.js"></script>
