@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100&display=swap">
+	<link rel="stylesheet" href="./variables.css">
+	<link rel="stylesheet" href="./styles.css">
+	<title>Document</title>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+</head>
+<body>
+	<header>
+		<h1>kakaopage</h1>
+		<nav id="route-navbar">
+			<ul class="navbar-list">
+				<li class="navbar-list-element"><a href="#">홈</a></li>
+				<li class="navbar-list-element"><a href="#">웹툰</a></li>
+				<li class="navbar-list-element"><a href="#">웹소설</a> </li>
+				<li class="navbar-list-element"><a href="#">책</a></li>
+			</ul>
+		</nav>
+		<div id="search">
+			<form>
+				<input type="text" placeholder="제목, 작가를 입력하세요.">
+				<button type="submit"><span class="material-symbols-outlined">search</span></button>
+			</form>
+		</div>
+		<nav id="user-navbar">
+			<ul class="user-navbar__list">
+				<li><span class="material-symbols-outlined">redeem</span></li>
+				<li><span class="material-symbols-outlined">person</span></li>
+				<li><span class="material-symbols-outlined">ios_share</span></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<div id="banner">
+			<div class="swiper">
+				<!-- Additional required wrapper -->
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<div class="swiper-slide__shadow"></div>
+						<div class="swiper-slide-details">
+							<h2 class="swiper-slide-details__title">
+								안녕하세요
+							</h2>
+							<p class="swiper-slide-details__info">
+								우리 모두 행복한 하루 보내세요
+							</p>
+						</div>
+						<div class="swiper-slide__shadow"></div>
+					</div>
+					<div class="swiper-slide">
+						<div class="swiper-slide__shadow"></div>
+						<div class="swiper-slide-details">
+							<h2 class="swiper-slide-details__title">
+								감사해요
+							</h2>
+							<p class="swiper-slide-details__info">
+								우리 모두 행복한 하루 보내세요
+							</p>
+						</div>
+						<div class="swiper-slide__shadow"></div>
+					</div>
+					<div class="swiper-slide">
+						<div class="swiper-slide__shadow"></div>
+						<div class="swiper-slide-details">
+							<h2 class="swiper-slide-details__title">
+								잘있어요
+							</h2>
+							<p class="swiper-slide-details__info">
+								우리 모두 행복한 하루 보내세요
+							</p>
+						</div>
+						<div class="swiper-slide__shadow"></div>
+					</div>
+				</div>
+				<div class="swiper-pagination"></div>
+				<div class="swiper-button-prev"></div>
+				<div class="swiper-button-next"></div>
+			</div>
+		</div>
+		<div id="today">
+			<div class="today-list">오늘 신작</div>
+			<div class="today-list">오늘의 랭킹🏆</div>
+			<div class="today-list">원작보면 캐시선물</div>
+		</div>
+		<div class="book-list">
+			<h2 class="book-list__title">3다무-3시간마다무료 웹툰</h2>
+			<div class="book-list-swiper">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide"></div>
+					<div class="swiper-slide"></div>
+					<div class="swiper-slide"></div>
+					<div class="swiper-slide"></div>
+					<div class="swiper-slide"></div>
+					<div class="swiper-slide"></div>
+					<div class="swiper-slide"></div>
+					<div class="swiper-slide"></div>
+				</div>
+				<div class="swiper-pagination"></div>
+				<div class="swiper-button-prev"></div>
+				<div class="swiper-button-next"></div>
+			</div>
+		</div>
+		<div class="book-list">
+			<h2 class="book-list__title">3다무-3시간마다무료 웹소설</h2>
+			<div class="book-list-swiper">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide"></div>
+					<div class="swiper-slide"></div>
+					<div class="swiper-slide"></div>
+					<div class="swiper-slide"></div>
+					<div class="swiper-slide"></div>
+					<div class="swiper-slide"></div>
+					<div class="swiper-slide"></div>
+					<div class="swiper-slide"></div>
+				</div>
+				<div class="swiper-pagination"></div>
+				<div class="swiper-button-prev"></div>
+				<div class="swiper-button-next"></div>
+			</div>
+		</div>
+		<div class="book-list">
+			<h2 class="book-list__title">추천 액션 웹툰</h2>
+			<div class="book-list-swiper">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide"></div>
+					<div class="swiper-slide"></div>
+					<div class="swiper-slide"></div>
+					<div class="swiper-slide"></div>
+					<div class="swiper-slide"></div>
+					<div class="swiper-slide"></div>
+					<div class="swiper-slide"></div>
+					<div class="swiper-slide"></div>
+				</div>
+				<div class="swiper-pagination"></div>
+				<div class="swiper-button-prev"></div>
+				<div class="swiper-button-next"></div>
+			</div>
+		</div>
+		<div class="event-section">
+			<h2 class="event-section__title">3다무 이벤트!</h2>
+			<div class="event-section__elements">
+				<div class="event-section__element"></div>
+				<div class="event-section__element"></div>
+				<div class="event-section__element"></div>
+				<div class="event-section__element"></div>
+			</div>
+		</div>
+		<div id="ranking">
+			<h2 class="ranking-title">
+				<span>실시간 랭킹</span>
+				<span class="material-symbols-outlined">arrow_forward_ios</span>
+			</h2>
+			<div class="ranking-elements">
+				<ul class="ranking-element">
+					<!-- <h3 class="ranking-element__title">웹툰</h3> -->
+					<li class="ranking-list">
+						<div class="ranking-list__img">
+							<img src="https://source.unsplash.com/random/300*100" alt="">
+						</div>
+						<div class="ranking-list__detail">
+							<h4 class="ranking-list__ranking">1</h4>
+							<span class="ranking-list__title">파혼의 대가</span>
+							<span class="ranking-list__info">로판 &#183; 115.5만 &#183; 스튜디오 이너스,ARC,아이데라</span>
+						</div>
+					</li>
+					<li class="ranking-list">
+						<div class="ranking-list__img">
+							<img src="https://source.unsplash.com/random/300*101" alt="">
+						</div>
+						<div class="ranking-list__detail">
+							<h4 class="ranking-list__ranking">2</h4>
+							<span class="ranking-list__title">신들의 알바나라</span>
+							<span class="ranking-list__info">소년 &#183; 38.7만 &#183; 전태환,Deany,Mir,갓띵작</span>
+						</div>
+					</li>
+					<li class="ranking-list">
+						<div class="ranking-list__img">
+							<img src="https://source.unsplash.com/random/300*102" alt="">
+						</div>
+						<div class="ranking-list__detail">
+							<h4 class="ranking-list__ranking">3</h4>
+							<span class="ranking-list__title">나 혼자만 레벨업</span>
+							<span class="ranking-list__info">소년 &#183; 3.7억 &#183; 현군,장성락,추공</span>
+						</div>
+					</li>
+					<li class="ranking-list">
+						<div class="ranking-list__img">
+							<img src="https://source.unsplash.com/random/300*103" alt="">
+						</div>
+						<div class="ranking-list__detail">
+							<h4 class="ranking-list__ranking">4</h4>
+							<span class="ranking-list__title">연록흔</span>
+							<span class="ranking-list__info">로맨스 &#183; 4,117만 &#183; 웹툰 이도경, 원작 한수영</span>
+						</div>
+					</li>
+					<li class="ranking-list">
+						<div class="ranking-list__img">
+							<img src="https://source.unsplash.com/random/300*104" alt="">
+						</div>
+						<div class="ranking-list__detail">
+							<h4 class="ranking-list__ranking">5</h4>
+							<span class="ranking-list__title">소꿉친구가 집착 남편이 되었다</span>
+							<span class="ranking-list__info">로판 &#183; 553.8만 &#183; 스튜디오 이너스, 여지, 윤달</span>
+						</div>
+					</li>
+				</ul>
+				<ul class="ranking-element">
+					<!-- <h3 class="ranking-element__title">웹소설</h3> -->
+					<li class="ranking-list">
+						<div class="ranking-list__img">
+							<img src="https://source.unsplash.com/random/300*105" alt="">
+						</div>
+						<div class="ranking-list__detail">
+							<h4 class="ranking-list__ranking">1</h4>
+							<span class="ranking-list__title">무림세가 천대받는 손녀 딸이 되었다</span>
+							<span class="ranking-list__info">로판 &#183; 5865.8만 &#183; 마루별</span>
+						</div>
+					</li>
+					<li class="ranking-list">
+						<div class="ranking-list__img">
+							<img src="https://source.unsplash.com/random/300*106" alt="">
+						</div>
+						<div class="ranking-list__detail">
+							<h4 class="ranking-list__ranking">2</h4>
+							<span class="ranking-list__title">미친 남주들과 같은 반이 되었다</span>
+							<span class="ranking-list__info">로맨스 &#183; 36.8만 &#183; 하뮴</span>
+						</div>
+					</li>
+					<li class="ranking-list">
+						<div class="ranking-list__img">
+							<img src="https://source.unsplash.com/random/300*107" alt="">
+						</div>
+						<div class="ranking-list__detail">
+							<h4 class="ranking-list__ranking">3</h4>
+							<span class="ranking-list__title">데뷔 못 하면 죽는 병 걸림</span>
+							<span class="ranking-list__info">현판 &#183; 3.9억 &#183; 백덕수</span>
+						</div>
+					</li>
+					<li class="ranking-list">
+						<div class="ranking-list__img">
+							<img src="https://source.unsplash.com/random/300*108" alt="">
+						</div>
+						<div class="ranking-list__detail">
+							<h4 class="ranking-list__ranking">4</h4>
+							<span class="ranking-list__title">나는 회귀자가 아닙니다</span>
+							<span class="ranking-list__info">판타지 &#183; 2,3919.9만 &#183; 나비계곡</span>
+						</div>
+					</li>
+					<li class="ranking-list">
+						<div class="ranking-list__img">
+							<img src="https://source.unsplash.com/random/300*109" alt="">
+						</div>
+						<div class="ranking-list__detail">
+							<h4 class="ranking-list__ranking">5</h4>
+							<span class="ranking-list__title">환생한 암살자는 검술 천재</span>
+							<span class="ranking-list__info">판타지 &#183; 1.3억 &#183; 글개미</span>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</main>
+	<footer>
+		<nav class="footer-navbar">
+			<ul>
+				<li>회사소개</li>
+				<li>이용약관</li>
+				<li>개인정보처리방침</li>
+				<li>청소년보호정책</li>
+				<li>공지사항</li>
+			</ul>
+		</nav>
+		<p>
+			대표자 이진수, 김성수 | 호스팅서비스사업자 (주) 카카오엔터테인먼트 | 사업자 정보 확인<br>
+			사업자 등록 번호 220-88-02594 | 통신판매업신고 2018-성남분당B-0004<br>
+			대표전화 1644-4755 | 이메일 contact@kakaopage.com | 경기도 성남시 분당구 판교역로 221<br>
+			<br>
+			Kakao Entertainment Corp.
+		</p>
+	</footer>
+	<script>
+		const swiper = new Swiper('.swiper', {
+			slidesPerView: "auto",
+			centeredSlides: true,
+			 spaceBetween: 5,
+			loop: true,
+
+			autoplay: {
+				delay: 5000,
+			},
+
+			pagination: {
+        el: ".swiper-pagination",
+        type: "fraction",
+      },
+
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
+		});
+		const bookSwiper = new Swiper('.book-list-swiper', {
+			slidesPerView: 6,
+			spaceBetween: 5,
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
+		});
+	</script>
+</body>
+</html>
