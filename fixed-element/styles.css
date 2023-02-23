@@ -1,0 +1,24 @@
+@charset "utf-8";
+
+section {
+  height: 100vh;
+}
+
+.wrapper {
+  width: 100vw;
+  height: 3500px;
+  background-color: aquamarine;
+}
+
+.wrap {
+  position: fixed;
+  opacity: 0;
+  height: 100vh;
+  top: 0;
+  bottom: 40px;
+  right: 40px;
+}
+
+.on {
+  opacity: 1 !important;
+}

@@ -1,0 +1,40 @@
+@charset "utf-8";
+@import "reset.css";
+
+
+.scroll-section {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+.section {
+  height: 100%;
+  scroll-snap-align: start;
+}
+
+.section-index {
+  position: fixed;
+  top: 40%;
+  left: 95%;
+}
+
+.section-index li {
+  width: 30px;
+  height: 30px;
+  background-color: black;
+  margin-bottom: 30px;
+}
+
+.on {
+  background-color: white !important;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
