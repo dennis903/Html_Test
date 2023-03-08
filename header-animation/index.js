@@ -1,5 +1,7 @@
 const header = $('header');
+const subHeader = $('.sub-header');
 const headerHeight = header[0].getBoundingClientRect().height;
+
 
 $(function () {
 	$(window).on('scroll', function () {
@@ -14,6 +16,13 @@ $(function () {
 		}
 		else if (window.scrollY < headerHeight) {
 			header.css('background-color', 'white');
+		}
+		if (window.scrollY < 300) {
+			if (subHeader.hasClass('on'))
+				subHeader.removeClass('on');
+		} else {
+			if (!subHeader.hasClass('on'))
+				subHeader.addClass('on');
 		}
 	})
 });
