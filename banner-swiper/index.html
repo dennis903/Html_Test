@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>test</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+	<link rel="stylesheet" href="./reset.css">
+	<link rel="stylesheet" href="./styles.css">
+	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+</head>
+<body>
+	<div class="swiper mySwiper">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide">
+				<img src="https://source.unsplash.com/random/300*100" alt="">
+			</div>
+			<div class="swiper-slide">
+				<img src="https://source.unsplash.com/random/300*101" alt="">
+			</div>
+			<div class="swiper-slide">
+				<img src="https://source.unsplash.com/random/300*102" alt="">
+			</div>
+			<div class="swiper-slide">
+				<img src="https://source.unsplash.com/random/300*103" alt="">
+			</div>
+			<div class="swiper-slide">
+				<img src="https://source.unsplash.com/random/300*104" alt="">
+			</div>
+		</div>
+		<div class="swiper-pagination">
+		</div>
+	</div>
+	<script>
+		const gameList = ['Lies of P', '브라운더스트', '고양이와 스프', '피망 뉴맞고', '아바'];
+		const swiper = new Swiper(".mySwiper", {
+			direction: "vertical",
+			effect: "creative",
+			creativeEffect: {
+				prev: {
+					translate: [0, '-95%', 0]
+				},
+				next: {
+					translate: [0, '100%', 0]
+				},
+			},
+			loop: true,
+			speed: 1000,
+			pagination: {
+				el: ".swiper-pagination",
+				clickable: true,
+				renderBullet: function (index, className) {
+					return '<span class="' + className + '">' + '<em>' + gameList[index] + '</em>' + '</span>';
+				}
+			},
+		});
+	</script>
+</body>
+
+</html>
