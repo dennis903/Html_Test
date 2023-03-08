@@ -4,6 +4,18 @@
 	box-sizing: border-box;
 }
 
+body {
+	height: 300vh;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
 header {
 	position: sticky;
 	display: flex;
@@ -27,8 +39,4 @@ header > nav > ul {
 	display: flex;
 	justify-content: space-between;
 	width: 250px;
-}
-
-body {
-	height: 300vh;
 }
